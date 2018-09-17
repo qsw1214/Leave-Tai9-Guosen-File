@@ -1,0 +1,8 @@
+node_modules/
+.sync
+testing/
+production/
+dev/
+tmp/
+config.json
+upload.sh

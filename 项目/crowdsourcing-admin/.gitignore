@@ -1,0 +1,10 @@
+.DS_Store
+dist/
+*.log
+*.lock
+node_modules/
+.idea/
+.eslintrc.js
+.eslintignore
+tools/
+.idea/workspace.xml

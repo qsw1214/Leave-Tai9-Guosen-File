@@ -1,0 +1,73 @@
+.page__permission,
+.page__role,
+.shifts-edit, {
+  &--details {
+    .el-tree-node__expand-icon,
+    .el-tree-node__label,
+    .el-tree-node__loading-icon,
+    .el-checkbox {
+      vertical-align: inherit;
+    }
+
+    .block-tip {
+      margin-top: 18px;
+      margin-left: 20px;
+      font-size: 14px;
+      color: #999;
+      font-weight: normal;
+    }
+
+    /* tree list */
+    .tree-list,
+    .tree-list-edit {
+      border: 1px solid #d7d7d7;
+      margin: 18px 20px 22px 20px;
+    }
+
+    .tree-list-edit {
+      max-width: calc(50% + 390px);
+    }
+
+    /* choose wrap */
+    .choose-list {
+      margin: 18px 20px 22px 20px;
+
+      &.edit {
+        max-width: calc(50% + 390px);
+      }
+    }
+
+    .choose-list-selected {
+      display: flex;
+      margin-bottom: 14px;
+    }
+
+    .choose-list-title {
+      white-space: nowrap;
+      margin-right: 17px;
+      line-height: 34px;
+    }
+
+    .choose-list-items {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: -14px;
+    }
+
+    .choose-list-item {
+      line-height: 34px;
+      white-space: nowrap;
+      padding: 0 20px;
+      border: 1px solid #d7d7d7;
+      position: relative;
+      margin-right: 14px;
+      margin-bottom: 14px;
+    }
+
+    .choose-list-close {
+      position: absolute;
+      top: -17px;
+      right: -9.5px;
+    }
+  }
+}

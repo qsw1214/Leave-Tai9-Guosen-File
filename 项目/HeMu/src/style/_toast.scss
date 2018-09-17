@@ -1,0 +1,22 @@
+@import 'mixin';
+@import '~bourbon/app/assets/stylesheets/bourbon';
+
+#toast_origin {
+  background: rgba(0,0,0,0.5);
+  border-radius: rem(100);
+  color: #fff;
+  @include fontSize(14px);
+  padding: px2rem(10) px2rem(20);
+  position: fixed;
+  bottom: px2rem(100);
+  left: 50%;
+  width: auto;
+  max-width: 80%;
+  z-index: 1000;
+  white-space: nowrap;
+  @include transform(translateX(-50%));
+
+  &.hide {
+    display: none;
+  }
+}
