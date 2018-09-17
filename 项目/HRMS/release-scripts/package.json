@@ -1,0 +1,6 @@
+{
+  "version": "1.7.0-beat.7",
+  "dependencies": {
+    "version-bump-prompt": "^4.1.0"
+  }
+}

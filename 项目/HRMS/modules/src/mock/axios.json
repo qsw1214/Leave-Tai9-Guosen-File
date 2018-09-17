@@ -1,0 +1,8 @@
+{
+  "method": "get",
+  "url": "/mock/axios",
+  "delay": 1000,
+  "response": {
+    "code": 2
+  }
+}

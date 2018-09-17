@@ -1,0 +1,114 @@
+@import './mixin';
+@import '~bourbon/app/assets/stylesheets/bourbon';
+/* 一个项目item */
+%cell {
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  padding: px2rem(16) px2rem(18);
+  background: #fff;
+  margin-top: -1px;
+}
+.cell {
+  @include display(flex);
+  @include align-items(center);
+  @include box-align(center);
+  @extend %cell;
+
+  &.cell__top {
+    @include align-items(flex-start);
+
+    .wechat {
+      span {
+        @include font-dpr(12px);
+        color: #ccc;
+        position: relative;
+        top: px2rem(4);
+      }
+    }
+  }
+
+  %title {
+    @include font-dpr(16px);
+    color: #555;
+    font-weight: normal;
+    line-height: 1;
+    text-align: left;
+  }
+
+  &__title {
+    @extend %title;
+  }
+
+  &__content {
+    @include flex(1);
+    @include font-dpr(14px);
+    color: #808080;
+    text-align: right;
+    word-break:break-all;
+    word-wrap:break-word;
+    line-height: 1;
+  }
+
+  &__forward {
+    position: relative;
+    @include flex(1);
+
+    &::after {
+      content: " ";
+      display: inline-block;
+      height: px2rem(8);
+      width: px2rem(8);
+      border-width: px2rem(2) px2rem(2) 0 0;
+      border-color: #c4c4c4;
+      border-style: solid;
+      position: absolute;
+      top: 50%;
+      margin-top: px2rem(-5);
+      right: 0px;
+      @include transform(rotate(45deg));
+    }
+  }
+
+  .introduction {
+    @include flex(1);
+
+    h2 {
+      @extend %title;
+    }
+
+    p {
+      color: #808080;
+      text-align: justify;
+      @include font-dpr(14px);
+      line-height: 1.57;
+      margin-top: px2rem(5);
+    }
+  }
+
+  .cards {
+    @include flex(1);
+    h2 {
+      @extend %title;
+    }
+  }
+}
+
+.cell__column {
+  @extend %cell;
+
+  .cell__title {
+    @include font-dpr(16px);
+    color: #555;
+    font-weight: normal;
+    line-height: 1;
+    text-align: left;
+  }
+  .cell__content {
+    margin-top: px2rem(5);
+    color: #808080;
+    text-align: left;
+    word-break:break-all;
+    word-wrap:break-word;
+    line-height: 1.57;
+  }
+}
